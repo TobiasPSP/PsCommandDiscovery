@@ -1,9 +1,15 @@
 # PsCommandDiscovery
-The module **PsCommandDiscovery** aims to help users find commands. While the built-in `Get-Command` focuses on command name, parameters and origin, the new function `Find-PowerShellCommand` extends the search scope and finds commands based on their output as well. 
+Finding **PowerShell** commands for a given mission isn't always easy. There are thousands of commands. Especially for new users, finding a good command to start with often is a show stopper.
 
-While `Find-PowerShellCommand` can help tremendously in finding commands (see examples below), with this module I'd like to start a community effort to add all the tools and clever approaches you all might find useful in finding PowerShell commands. 
+The built-in `Get-Command` is a good choice to find commands based on name, verb, noun, module, or parameter.
 
-So if you have ideas or strategies that can help finding **PowerShell** commands, or have questions or comments about the existing module, please join our [Discussions](https://github.com/TobiasPSP/PsCommandDiscovery/discussions)!
+`Find-PowerShellCommand` goes a step beyond. It takes a simple keyword from you. Just make sure the keyword describes either the command you are looking for, *or* the information you want to get.
+
+`Find-PowerShellCommand` searches for your keyword not just in the command name. It also looks at the kinds of data *returned* by the command, so if you're looking for commands that help you get *IPAddresses*, `Find-PowerShellCommand` would find commands with arbitrary names that return objects with at least one property containing your keyword, i.e. *IPAddress*.
+
+That makes discovering commands so much easier, for the new user as well as for the experienced **PowerShell** SysAdmin who's looking for some piece of information.
+
+I've started work on this while updating one of my books. In a perfect world, I'd love to get your feedback via [Discussions](https://github.com/TobiasPSP/PsCommandDiscovery/discussions) so we can refine `Find-PowerShellCommand` and add more strategies and tools to make the first step easier: finding the automation command that can make your day.
 
 ## Installation
 
