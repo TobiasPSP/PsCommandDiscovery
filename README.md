@@ -1,7 +1,9 @@
 # PsCommandDiscovery
-Most **PowerShell** users know the situation when you know what kind of information you need, but you do not know which command might help you.
-
 The module **PsCommandDiscovery** aims to help users find commands. While the built-in `Get-Command` focuses on command name, parameters and origin, the new function `Find-PowerShellCommand` extends the search scope and finds commands based on their output as well. 
+
+While `Find-PowerShellCommand` can help tremendously in finding commands (see examples below), with this module I'd like to start a community effort to add all the tools and clever approaches you all might find useful in finding PowerShell commands. 
+
+So if you have ideas or strategies that can help finding **PowerShell** commands, or have questions or comments about the existing module, please join our [Discussions](https://github.com/TobiasPSP/PsCommandDiscovery/discussions)!
 
 ## Installation
 
